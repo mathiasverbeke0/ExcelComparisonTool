@@ -1,5 +1,5 @@
 # Excel Comparison Tool
-This application is used to compare the contents of two csv files and identify any common lines. The comparison is performed line by line, and the result is saved in a new excel file. The original excel files are first converted to csv files, and the comparison is performed on the csv files.
+This application is used to compare the contents of two csv files and identify any common or unique lines. The comparison is performed line by line, and the result is saved in a new excel file. The original excel files are first converted to csv files, and the comparison is performed on the csv files.
 
 ## Requirements
 * Python 3.x
@@ -23,13 +23,31 @@ pip install numpy
 The script takes in two file names as command line arguments. To run the script, use the following command in your terminal:
 
 ```bash
-python ExcelComparisonTool.py filename1.xlsx filename2.xlsx
+usage: python ExcelComparisonTool.py [-h] [-u] filename1 filename2
+
+positional arguments:
+  filename1         name of the first Excel file
+  filename2         name of the second Excel file
+
+options:
+  -h, --help        show this help message and exit
+  -u, --unique      use this option to see what lines in file1 are not present in file2
 ```
-Where filename1 and filename2 are the names of the two excel files you want to compare.
+
+## Examples
+```bash
+python ExcelComparisonTool.py file1.xlsx file2.xlsx
+```
+This command will compare the contents of 'file1.xlsx' and 'file2.xlsx' and identify the common lines. 
+
+```bash
+python ExcelComparisonTool.py -u file1.xlsx file2.xlsx
+```
+This command will compare the contents of 'file1.xlsx' and 'file2.xlsx' and identify the lines in 'file1.xlsx' that are not present in 'file2.xlsx'.
 
 ## Limitations
 * The script currently only supports Excel files in the .xlsx format.
-* The csv files are created in the same directory as the script, so make sure to have the necessary write persmission in that directory.
+* The csv files are created in the same directory as the .xlsx files, so make sure to have the necessary write persmission in that directory.
 * The script only compares the contents of the csv files data line by data line. Any other comparison methods (e.g. column-wise comparison) are not currently supported.
 
 ## Contributing
