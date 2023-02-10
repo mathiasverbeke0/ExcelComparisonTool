@@ -23,9 +23,9 @@ pip install numpy
 The script takes in two file names as command line arguments. To run the script, use the following command in your terminal:
 
 ```bash
-python <script_name>.py <filename1> <filename2>
+python ExcelComparisonTool.py filename1.xlsx filename2.xlsx
 ```
-Where <script_name>.py is the name of the script and <filename1> and <filename2> are the names of the two excel files you want to compare.
+Where script_name.py is the name of the script and filename1 and filename2 are the names of the two excel files you want to compare.
 
 ## Limitations
 * The script currently only supports Excel files in the .xlsx format.
