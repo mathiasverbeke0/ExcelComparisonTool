@@ -25,7 +25,7 @@ The script takes in two file names as command line arguments. To run the script,
 ```bash
 python ExcelComparisonTool.py filename1.xlsx filename2.xlsx
 ```
-Where script_name.py is the name of the script and filename1 and filename2 are the names of the two excel files you want to compare.
+Where filename1 and filename2 are the names of the two excel files you want to compare.
 
 ## Limitations
 * The script currently only supports Excel files in the .xlsx format.
