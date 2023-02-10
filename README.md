@@ -9,7 +9,7 @@ This application is used to compare the contents of two csv files and identify a
 ## Installation
 1. Clone the repository
 ```bash
-git clone https://github.com/mathiasverbeke0/ExcelComparisonTool.git
+git clone git@github.com:mathiasverbeke0/ExcelComparisonTool.git
 ```
 
 2. Install required packages
