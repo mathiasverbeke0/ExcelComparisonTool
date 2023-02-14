@@ -16,7 +16,6 @@ git clone git@github.com:mathiasverbeke0/ExcelComparisonTool.git
 ```bash
 pip install openpyxl
 pip install pandas
-pip install numpy
 ```
 
 ## Usage
